@@ -1,61 +1,42 @@
-/* style.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    color: #333;
+/* Services Section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-header {
-    background: #ff6600;
-    padding: 15px;
-    text-align: center;
-    color: white;
+.services div {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+.services div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
 
-nav ul li {
-    margin: 0 15px;
+.services h3 {
+  background: linear-gradient(135deg, #ff914d, #ff5e62);
+  color: white;
+  padding: 12px;
+  margin: 0;
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.services img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-h1, h2 {
-    color: #ff6600;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+.services div:hover img {
+  transform: scale(1.05);
 }
